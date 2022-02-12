@@ -1,0 +1,6 @@
+use test
+SELECT SUM(Всего_MB) as 'Размер всех курсов (в МБ)' From Zagadka
+SELECT SUM(Всего_MB) as 'Минимальный объём очистки после удаления курсов (в МБ)' From Zagadka
+WHERE Всего_MB < 170
+SELECT COUNT(Всего_MB) as 'Минимальное количество курсов, которое нужно удалить:' From Zagadka
+WHERE Всего_MB > 170  
